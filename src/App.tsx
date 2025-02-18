@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Akash from "./assets/Akash.jpg";
-
 import { motion } from "framer-motion";
 import {
   Moon,
@@ -15,10 +14,8 @@ import {
   Code,
   Award,
   Briefcase,
-  GraduationCap,
   Star,
   Trophy,
-  Facebook,
   Twitter,
   Instagram,
 } from "lucide-react";
@@ -542,100 +539,134 @@ function App() {
 
       {/* Achievements Section */}
       <motion.section
-      id="achievements"
-      className="container mx-auto px-6 py-20"
-      whileHover={{ scale: 1.02 }}
-      transition={{ duration: 0.3 }}
-    >
-      <h2
-        className={`text-3xl font-bold mb-10 flex items-center gap-2 ${
-          darkMode ? "text-white" : "text-gray-900"
-        }`}
+        id="achievements"
+        className="container mx-auto px-6 py-20"
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.3 }}
       >
-        <Trophy className="text-[#00B4D8]" />
-        Achievements & Certifications
-      </h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Certifications Section */}
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="bg-white/5 p-6 rounded-lg border border-[#00B4D8]/20 shadow-md transition-all duration-300 hover:shadow-lg"
+        <h2
+          className={`text-3xl font-bold mb-10 flex items-center gap-2 ${
+            darkMode ? "text-white" : "text-gray-900"
+          }`}
         >
-          <h3 className="text-[#00B4D8] font-bold mb-4">Certifications</h3>
-          <ul className="space-y-4 text-gray-400">
-            <motion.li
-              whileHover={{ scale: 1.05 }}
-              className="flex items-start gap-2"
-            >
-              <div>
-                <div className={`font-semibold ${darkMode ? "text-white" : "text-gray-900"}`}>
-                  Oracle Cloud Infrastructure 2024 Certified Foundations Associate
-                </div>
-                <p className="text-gray-400">Certificate ID: 100752454OCI2024FNDCFA</p>
-              </div>
-            </motion.li>
+          <Trophy className="text-[#00B4D8]" />
+          Achievements & Certifications
+        </h2>
 
-            <motion.li
-              whileHover={{ scale: 1.05 }}
-              className="flex items-start gap-2"
-            >
-              <div>
-                <div className={`font-semibold ${darkMode ? "text-white" : "text-gray-900"}`}>
-                  Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Certifications Section */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="bg-white/5 p-6 rounded-lg border border-[#00B4D8]/20 shadow-md transition-all duration-300 hover:shadow-lg"
+          >
+            <h3 className="text-[#00B4D8] font-bold mb-4">Certifications</h3>
+            <ul className="space-y-4 text-gray-400">
+              <motion.li
+                whileHover={{ scale: 1.05 }}
+                className="flex items-start gap-2"
+              >
+                <div>
+                  <div
+                    className={`font-semibold ${
+                      darkMode ? "text-white" : "text-gray-900"
+                    }`}
+                  >
+                    Oracle Cloud Infrastructure 2024 Certified Foundations
+                    Associate
+                  </div>
+                  <p className="text-gray-400">
+                    Certificate ID: 100752454OCI2024FNDCFA
+                  </p>
                 </div>
-                <p className="text-gray-400">Certificate ID: 100752454OCI23AIFCA</p>
-              </div>
-            </motion.li>
-          </ul>
-        </motion.div>
+              </motion.li>
 
-        {/* Achievements Section */}
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="bg-white/5 p-6 rounded-lg border border-[#00B4D8]/20 shadow-md transition-all duration-300 hover:shadow-lg"
-        >
-          <h3 className="text-[#00B4D8] font-bold mb-4">Achievements</h3>
-          <ul className="space-y-4 text-gray-400">
-            <motion.li
-              whileHover={{ scale: 1.05 }}
-              className="flex items-start gap-2"
-            >
-              <Star className="text-[#00B4D8] mt-1 flex-shrink-0" size={20} />
-              <div>
-                <div className={`font-semibold ${darkMode ? "text-white" : "text-gray-900"}`}>
-                  Gold Badge in C++ on HackerEarth and 2-Star Rating on CodeChef
+              <motion.li
+                whileHover={{ scale: 1.05 }}
+                className="flex items-start gap-2"
+              >
+                <div>
+                  <div
+                    className={`font-semibold ${
+                      darkMode ? "text-white" : "text-gray-900"
+                    }`}
+                  >
+                    Oracle Cloud Infrastructure 2023 AI Certified Foundations
+                    Associate
+                  </div>
+                  <p className="text-gray-400">
+                    Certificate ID: 100752454OCI23AIFCA
+                  </p>
                 </div>
-              </div>
-            </motion.li>
+              </motion.li>
+            </ul>
+          </motion.div>
 
-            <motion.li
-              whileHover={{ scale: 1.05 }}
-              className="flex items-start gap-2"
-            >
-              <Trophy className="text-[#00B4D8] mt-1 flex-shrink-0" size={20} />
-              <div>
-                <div className={`font-semibold ${darkMode ? "text-white" : "text-gray-900"}`}>
-                  1st place in college-level tech symposium for StudyNotion project
+          {/* Achievements Section */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="bg-white/5 p-6 rounded-lg border border-[#00B4D8]/20 shadow-md transition-all duration-300 hover:shadow-lg"
+          >
+            <h3 className="text-[#00B4D8] font-bold mb-4">Achievements</h3>
+            <ul className="space-y-4 text-gray-400">
+              <motion.li
+                whileHover={{ scale: 1.05 }}
+                className="flex items-start gap-2"
+              >
+                <Star className="text-[#00B4D8] mt-1 flex-shrink-0" size={20} />
+                <div>
+                  <div
+                    className={`font-semibold ${
+                      darkMode ? "text-white" : "text-gray-900"
+                    }`}
+                  >
+                    Gold Badge in C++ on HackerEarth and 2-Star Rating on
+                    CodeChef
+                  </div>
                 </div>
-              </div>
-            </motion.li>
+              </motion.li>
 
-            <motion.li
-              whileHover={{ scale: 1.05 }}
-              className="flex items-start gap-2"
-            >
-              <Award className="text-[#00B4D8] mt-1 flex-shrink-0" size={20} />
-              <div>
-                <div className={`font-semibold ${darkMode ? "text-white" : "text-gray-900"}`}>
-                  Developed ed-tech platform with 500+ active users
+              <motion.li
+                whileHover={{ scale: 1.05 }}
+                className="flex items-start gap-2"
+              >
+                <Trophy
+                  className="text-[#00B4D8] mt-1 flex-shrink-0"
+                  size={20}
+                />
+                <div>
+                  <div
+                    className={`font-semibold ${
+                      darkMode ? "text-white" : "text-gray-900"
+                    }`}
+                  >
+                    1st place in college-level tech symposium for StudyNotion
+                    project
+                  </div>
                 </div>
-              </div>
-            </motion.li>
-          </ul>
-        </motion.div>
-      </div>
-    </motion.section>
+              </motion.li>
+
+              <motion.li
+                whileHover={{ scale: 1.05 }}
+                className="flex items-start gap-2"
+              >
+                <Award
+                  className="text-[#00B4D8] mt-1 flex-shrink-0"
+                  size={20}
+                />
+                <div>
+                  <div
+                    className={`font-semibold ${
+                      darkMode ? "text-white" : "text-gray-900"
+                    }`}
+                  >
+                    Developed ed-tech platform with 500+ active users
+                  </div>
+                </div>
+              </motion.li>
+            </ul>
+          </motion.div>
+        </div>
+      </motion.section>
 
       {/* Footer Section */}
       <motion.footer
@@ -771,7 +802,6 @@ function App() {
           </motion.div>
         </div>
       </motion.footer>
-
     </div>
   );
 }
